@@ -1,0 +1,32 @@
+float xpos;
+float ypos;
+
+
+void setup(){
+size(500,500);
+xpos = 250;
+ypos = 400;
+}
+
+void draw(){
+
+background(27,105,124);
+
+fill(200,200,200);
+ellipse(xpos,ypos,20,20);
+
+}
+
+
+void keyPressed(){
+if(keyCode == RIGHT){
+xpos = xpos + 20;
+}else if(keyCode == LEFT){
+xpos = xpos - 20;
+}else if(keyCode == UP){
+ypos = ypos - 20;
+}else if(keyCode == DOWN){
+ypos = ypos + 20;
+}
+
+}
